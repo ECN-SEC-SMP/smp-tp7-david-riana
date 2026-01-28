@@ -3,6 +3,8 @@
 
 using namespace std;
 
+//PARTIE 1 : Création d'une classe Point
+
 //Accesseurs
 float Point::getX() const{
     return x;
@@ -20,9 +22,23 @@ void Point::setX(float val){
 void Point::setY(float val){
     y = val;
 }
+
+// void Point::translater(const Point &a){
+//     x = x + a.x;
+//     y = y + a.y;
+// }
+
 void Point::translater(const Point &a){
-    x = x + a.x;
-    y = y + a.y;
+    this->addition(a);
+}
+
+void Point::affiche() const{
+    cout << "(" << x << ", " << y << ")" <<endl;
+}
+
+void Point::addition(const Point &p){
+    x = x + p.x;
+    y = y + p.y;
 }
 
 

@@ -20,7 +20,7 @@ class Point{
             x = p.x;
             y = p.y;
         }
-        
+
         //Accesseur
         float getX() const;
         float getY() const;
@@ -31,5 +31,7 @@ class Point{
 
         //Méthodes
         void translater(const Point &a);
+        void addition(const Point &p);
+        void affiche() const;
         
 };

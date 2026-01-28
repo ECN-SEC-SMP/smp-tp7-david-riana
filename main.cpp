@@ -19,20 +19,20 @@ int main() {
 //  Translation
     cout << "Test de la translation : "<< endl;
     p1.translater(pTest);
-    cout << p1.getX() << ", " << p1.getY() << endl;
+    p1.affiche();
 
 //  =======Test des constructeurs=========
     cout << "Constructeur sans paramètres : "<< endl;
     Point p2;
-    cout << p2.getX() << ", " << p2.getY() << endl;
+    p2.affiche();
 
     cout << "Constructeur avec paramètres : "<< endl;
     Point p3(2,3);
-    cout << p3.getX() << ", " << p3.getY() << endl;
+    p3.affiche();
 
     cout << "Constructeur avec référence à un autre point : "<< endl;
     Point p4(p1);
-    cout << p4.getX() << ", " << p4.getY() << endl;
+    p4.affiche();
     
     return 0;
 }
