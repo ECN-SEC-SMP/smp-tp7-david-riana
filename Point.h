@@ -37,4 +37,4 @@ class Point{
         
 };
 
-void operator<<(const Point &p);
+void operator<<(ostream,const Point &p);
