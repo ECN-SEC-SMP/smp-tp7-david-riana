@@ -51,15 +51,15 @@ float Rectangle::surface() {
     return long1 * larg1;
 }
 
-ostream& operator<<(ostream &os, Rectangle &r)
+ostream& operator<<(ostream &os, Rectangle &c)
 {
     os << "Rectangle:" << endl;
-    os << "  | Perimetre = " << r.perimetre()
-       << "  | Surface = " << r.surface()
-       << "  | Centre = " << r.getCentre()
-       << "  | Cote1 = " << r.getCote1()
-       << "  | Cote2 = " << r.getCote2()
-       << "  | Cote3 = " << r.getCote3()
-       << "  | Cote4 = " << r.getCote4();
+    os << "  | Perimetre = " << c.perimetre()
+       << "  | Surface = " << c.surface()
+       << "  | Centre = " << c.getCentre()
+       << "  | Cote1 = " << c.getCote1()
+       << "  | Cote2 = " << c.getCote2()
+       << "  | Cote3 = " << c.getCote3()
+       << "  | Cote4 = " << c.getCote4();
     return os;
 }
