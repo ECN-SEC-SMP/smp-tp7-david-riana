@@ -1,4 +1,8 @@
-#pragma once
+#ifndef SMP_TP7_DAVID_RIANA_POINT_H
+#define SMP_TP7_DAVID_RIANA_POINT_H
+
+#include <iostream>
+using namespace std;
 
 class Point{
     private:
@@ -7,8 +11,8 @@ class Point{
     public:
         // Constructeur
         Point(){
-        x = 0;
-        y = 0;
+            x = 0;
+            y = 0;
         }
 
         Point(float x, float y){
@@ -33,8 +37,9 @@ class Point{
         void translater(const Point &a);
         void addition(const Point &p);
         void affiche() const;
-        void operator+=(const Point &p2)
-        
+        void operator+=(const Point &p2);
 };
 
-void operator<<(ostream,const Point &p);
+ostream& operator<<(ostream &os, const Point &p);
+
+#endif //SMP_TP7_DAVID_RIANA_FORME_H

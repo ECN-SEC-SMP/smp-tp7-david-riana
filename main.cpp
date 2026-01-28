@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Point.h"
+#include "Forme.h"
 
 using namespace std;
 
@@ -33,6 +34,7 @@ int main() {
     cout << "Constructeur avec référence à un autre point : "<< endl;
     Point p4(p1);
     p4.affiche();
-    
+
+    // =======Test fonction de ========
     return 0;
 }

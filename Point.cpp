@@ -14,12 +14,12 @@ float Point::getY() const{
     return y;
 }
 
-//Setteur
-void Point::setX(float val){
+//Mutateurs
+void Point::setX(const float val){
     x = val;
 }
 
-void Point::setY(float val){
+void Point::setY(const float val){
     y = val;
 }
 
@@ -33,11 +33,13 @@ void Point::translater(const Point &a){
 }
 
 void Point::affiche() const{
-    cout << "(" << x << ", " << y << ")" <<endl;
+    cout << "(" << getX() << ", " << getY() << ")" <<endl;
 }
 
-void operator<<(ostream, const Point &p){
-    p.affiche();
+ostream& operator<<(ostream &os, const Point &p)
+{
+    os << "(" << p.getX() << ", " << p.getY() << ")";
+    return os;
 }
 
 void Point::addition(const Point &p){
