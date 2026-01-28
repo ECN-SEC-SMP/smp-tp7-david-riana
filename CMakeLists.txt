@@ -11,4 +11,5 @@ add_executable(smp_tp7_David_Riana main.cpp Point.cpp
         Rectangle.cpp
         Rectangle.h
         Carre.cpp
-        Carre.h)
+        Carre.h
+        ListeFormes.cpp)
