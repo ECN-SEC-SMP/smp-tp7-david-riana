@@ -33,5 +33,8 @@ class Point{
         void translater(const Point &a);
         void addition(const Point &p);
         void affiche() const;
+        void operator+=(const Point &p2)
         
 };
+
+void operator<<(const Point &p);
