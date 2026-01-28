@@ -1,0 +1,3 @@
+/home/riana/Documents/smp-tp7-david-riana/build/CMakeFiles/smp_tp7_David_Riana.dir
+/home/riana/Documents/smp-tp7-david-riana/build/CMakeFiles/edit_cache.dir
+/home/riana/Documents/smp-tp7-david-riana/build/CMakeFiles/rebuild_cache.dir

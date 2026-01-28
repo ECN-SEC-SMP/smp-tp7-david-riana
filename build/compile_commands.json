@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/riana/Documents/smp-tp7-david-riana/build",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -o CMakeFiles/smp_tp7_David_Riana.dir/main.cpp.o -c /home/riana/Documents/smp-tp7-david-riana/main.cpp",
+  "file": "/home/riana/Documents/smp-tp7-david-riana/main.cpp",
+  "output": "CMakeFiles/smp_tp7_David_Riana.dir/main.cpp.o"
+},
+{
+  "directory": "/home/riana/Documents/smp-tp7-david-riana/build",
+  "command": "/usr/bin/c++   -g -std=gnu++20 -o CMakeFiles/smp_tp7_David_Riana.dir/Point.cpp.o -c /home/riana/Documents/smp-tp7-david-riana/Point.cpp",
+  "file": "/home/riana/Documents/smp-tp7-david-riana/Point.cpp",
+  "output": "CMakeFiles/smp_tp7_David_Riana.dir/Point.cpp.o"
+}
+]

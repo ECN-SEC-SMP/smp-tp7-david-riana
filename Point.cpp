@@ -3,6 +3,7 @@
 
 using namespace std;
 
+//Accesseurs
 float Point::getX() const{
     return x;
 }
@@ -11,6 +12,7 @@ float Point::getY() const{
     return y;
 }
 
+//Setteur
 void Point::setX(float val){
     x = val;
 }
