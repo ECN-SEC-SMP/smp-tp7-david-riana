@@ -1,5 +1,4 @@
 #include <iostream>
-#include "inc/Fichier.h"
 
 int main() {
     std::cout << "Hello, World!" << std::endl;

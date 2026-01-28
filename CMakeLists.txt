@@ -3,4 +3,4 @@ project(smp_tp7_David_Riana)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(smp_tp7_David_Riana main.cpp)
+add_executable(smp_tp7_David_Riana main.cpp Point.cpp)
