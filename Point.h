@@ -16,6 +16,11 @@ class Point{
             this -> y = y;
         }
 
+        Point(Point const &p){
+            x = p.x;
+            y = p.y;
+        }
+        
         //Accesseur
         float getX() const;
         float getY() const;

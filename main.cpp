@@ -17,7 +17,7 @@ int main() {
     pTest.setY(43);
 
 //  Translation
-    cout << "Test de la transaltion : "<< endl;
+    cout << "Test de la translation : "<< endl;
     p1.translater(pTest);
     cout << p1.getX() << ", " << p1.getY() << endl;
 
@@ -29,5 +29,10 @@ int main() {
     cout << "Constructeur avec paramètres : "<< endl;
     Point p3(2,3);
     cout << p3.getX() << ", " << p3.getY() << endl;
+
+    cout << "Constructeur avec référence à un autre point : "<< endl;
+    Point p4(p1);
+    cout << p4.getX() << ", " << p4.getY() << endl;
+    
     return 0;
 }
