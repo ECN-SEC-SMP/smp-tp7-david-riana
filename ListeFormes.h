@@ -17,6 +17,8 @@ class ListeFormes{
 
         void ajout(Forme *f);
         float surfaceTotale() const;
+
+        Rectangle boiteEnglobante() const;
 };
 
 #endif

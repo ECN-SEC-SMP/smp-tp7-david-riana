@@ -21,6 +21,11 @@ public:
     void setRayon(const float rayon) {
         this->rayon = rayon;
     }
+
+    float getXMin() override;
+    float getXMax() override;
+    float getYMax() override;
+    float getYMin() override;
 };
 
 ostream &operator<<(std::ostream &os, Cercle &c);

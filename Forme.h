@@ -30,6 +30,13 @@ public:
 
     virtual float perimetre() = 0;
     virtual float surface()   = 0;
+
+    virtual float getXMin()   = 0;
+    virtual float getXMax()   = 0;
+
+    virtual float getYMax()   = 0;
+    virtual float getYMin()   = 0;
+
 };
 
 ostream &operator<<(std::ostream &s, Forme &f);

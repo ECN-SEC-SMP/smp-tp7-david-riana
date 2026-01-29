@@ -51,6 +51,38 @@ float Rectangle::surface() {
     return long1 * larg1;
 }
 
+float Rectangle::getXMin() {
+    float cote1XMin = cote1.getX();
+    float cote2XMin = cote2.getX();
+    float cote3XMin = cote3.getX();
+    float cote4XMin = cote4.getX();
+    return min(min(cote1XMin, cote2XMin), min(cote3XMin, cote4XMin));
+}
+
+float Rectangle::getXMax() {
+    float cote1XMax = cote1.getX();
+    float cote2XMax = cote2.getX();
+    float cote3XMax = cote3.getX();
+    float cote4XMax = cote4.getX();
+    return max(max(cote1XMax, cote2XMax), max(cote3XMax, cote4XMax));
+}
+
+float Rectangle::getYMax() {
+    float cote1YMax = cote1.getY();
+    float cote2YMax = cote2.getY();
+    float cote3YMax = cote3.getY();
+    float cote4YMax = cote4.getY();
+    return max(max(cote1YMax, cote2YMax), max(cote3YMax, cote4YMax));
+}
+
+float Rectangle::getYMin() {
+    float cote1YMin = cote1.getY();
+    float cote2YMin = cote2.getY();
+    float cote3YMin = cote3.getY();
+    float cote4YMin = cote4.getY();
+    return min(min(cote1YMin, cote2YMin), min(cote3YMin, cote4YMin));
+}
+
 ostream& operator<<(ostream &os, Rectangle &c)
 {
     os << "Rectangle:" << endl;

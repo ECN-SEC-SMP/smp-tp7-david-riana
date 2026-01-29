@@ -13,6 +13,22 @@ float Cercle::surface() {
     return M_PI * getRayon() * getRayon();
 }
 
+float Cercle::getXMin() {
+    return getCentre().getX() - getRayon();
+}
+
+float Cercle::getXMax() {
+    return getCentre().getX() + getRayon();
+}
+
+float Cercle::getYMax() {
+    return getCentre().getY() + getRayon();
+}
+
+float Cercle::getYMin() {
+    return getCentre().getY() - getRayon();
+}
+
 ostream& operator<<(ostream &os, Cercle &c)
 {
     os << "Cercle:" << endl;

@@ -1,5 +1,7 @@
 #include <iostream>
+#include <float.h>
 #include "ListeFormes.h"
+
 #include "Forme.h"
 using namespace std;
 
@@ -24,4 +26,27 @@ float ListeFormes::surfaceTotale() const{
     }
 
     return total;
+}
+
+Rectangle ListeFormes::boiteEnglobante() const{
+    Rectangle boite;
+    float xMin = FLT_MAX;
+    float yMin = FLT_MAX;
+
+    float xMax = FLT_MIN;
+    float yMax = FLT_MIN;
+
+    for (Forme *f : liste) {
+        xMin = std::min(xMin, f->getXMin());
+        yMin = std::min(yMin, f->getYMin());
+        xMax = std::max(xMax, f->getXMax());
+        yMax = std::max(yMax, f->getYMax());
+    }
+
+    boite.setCote1(xMin, yMin);
+    boite.setCote2(xMin, yMax);
+    boite.setCote3(xMax, yMax);
+    boite.setCote4(xMax, yMin);
+
+    return boite;
 }
