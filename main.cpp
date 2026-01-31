@@ -18,7 +18,9 @@ int main() {
     pTest.setY(43);
 
 //  Translation
-    cout << "Test de la translation : "<< endl;
+    cout << "Valeur de p1 initiale : "<< endl;
+    p1.affiche();
+    cout << "Test de la translation de (42,43): "<< endl;
     p1.translater(pTest);
     p1.affiche();
 
@@ -31,10 +33,29 @@ int main() {
     Point p3(2,3);
     p3.affiche();
 
+    cout << "Coordonnées du point de référence : "<< endl;
+    p1.affiche();
     cout << "Constructeur avec référence à un autre point : "<< endl;
     Point p4(p1);
     p4.affiche();
+    
+//  =======Test des accesseurs=========
+    cout << "Valeur de p1.x : "<< endl;
+    cout << p1.getX() << endl;
 
-    // =======Test fonction de ========
+    cout << "Valeur de p1.y : "<< endl;
+    cout << p1.getY() << endl;
+
+//  =======Test des mutateurs=========
+    cout << "Coordonnées de p1: "<< endl;
+    p1.affiche();
+
+    cout << "Modification du champ x : 44 -> 76 : "<< endl;
+    p1.setX(76);
+    p1.affiche();
+    cout << "Modification du champ y : 46 -> 95 : "<< endl;
+    p1.setY(95);
+    p1.affiche();
+    
     return 0;
 }

@@ -36,20 +36,22 @@ void Point::affiche() const{
     cout << "(" << getX() << ", " << getY() << ")" <<endl;
 }
 
+
 ostream& operator<<(ostream &os, const Point &p)
 {
     os << "(" << p.getX() << ", " << p.getY() << ")";
     return os;
 }
 
+
 void Point::addition(const Point &p){
     x = x + p.x;
     y = y + p.y;
 }
 
-void Point::operator+=(const Point &p2){
-    return this->addition(p2);
-}
+// void Point::operator+=(const Point &p2){
+//     return this->addition(p2);
+// }
 
 
 

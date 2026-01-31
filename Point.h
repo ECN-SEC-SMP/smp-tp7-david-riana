@@ -37,9 +37,10 @@ class Point{
         void translater(const Point &a);
         void addition(const Point &p);
         void affiche() const;
-        void operator+=(const Point &p2);
+        //void operator+=(const Point &p2);
 };
 
 ostream& operator<<(ostream &os, const Point &p);
 
 #endif //SMP_TP7_DAVID_RIANA_FORME_H
+
