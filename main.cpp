@@ -56,6 +56,13 @@ int main() {
     cout << "Modification du champ y : 46 -> 95 : "<< endl;
     p1.setY(95);
     p1.affiche();
+
+//  =======Test de la surcharge des opérateurs=========
+    cout << "Test de la surcharge de <<, affichage de p1" << endl;
+    cout << p1 << endl;
     
+    cout << "Test de la surcharge de += sur p1 et pTest" << endl;
+    p1 += pTest;
+    cout << p1 << endl;
     return 0;
 }

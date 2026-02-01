@@ -23,14 +23,17 @@ void Point::setY(const float val){
     y = val;
 }
 
-// void Point::translater(const Point &a){
-//     x = x + a.x;
-//     y = y + a.y;
-// }
+//Fonction permettant la translation initiale
+
+void Point::addition(const Point &p){
+    x = x + p.x;
+    y = y + p.y;
+}
 
 void Point::translater(const Point &a){
     this->addition(a);
 }
+
 
 void Point::affiche() const{
     cout << "(" << getX() << ", " << getY() << ")" <<endl;
@@ -44,14 +47,12 @@ ostream& operator<<(ostream &os, const Point &p)
 }
 
 
-void Point::addition(const Point &p){
-    x = x + p.x;
-    y = y + p.y;
-}
 
-// void Point::operator+=(const Point &p2){
-//     return this->addition(p2);
-// }
+
+void Point::operator+=(const Point &p){
+     x = x + p.x;
+     y = y + p.y;
+}
 
 
 
