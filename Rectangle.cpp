@@ -3,6 +3,7 @@
 //
 
 #include <cmath>
+#include <algorithm>
 #include "Rectangle.h"
 
 Point Rectangle::getCoin1() const {
@@ -56,7 +57,7 @@ float Rectangle::getXMin() {
     float cote2XMin = coin2_.getX();
     float cote3XMin = coin3_.getX();
     float cote4XMin = coin4_.getX();
-    return min(min(cote1XMin, cote2XMin), min(cote3XMin, cote4XMin));
+    return std::min(std::min(cote1XMin, cote2XMin), std::min(cote3XMin, cote4XMin));
 }
 
 float Rectangle::getXMax() {
@@ -64,7 +65,7 @@ float Rectangle::getXMax() {
     float cote2XMax = coin2_.getX();
     float cote3XMax = coin3_.getX();
     float cote4XMax = coin4_.getX();
-    return max(max(cote1XMax, cote2XMax), max(cote3XMax, cote4XMax));
+    return std::max(std::max(cote1XMax, cote2XMax), std::max(cote3XMax, cote4XMax));
 }
 
 float Rectangle::getYMax() {
@@ -72,7 +73,7 @@ float Rectangle::getYMax() {
     float cote2YMax = coin2_.getY();
     float cote3YMax = coin3_.getY();
     float cote4YMax = coin4_.getY();
-    return max(max(cote1YMax, cote2YMax), max(cote3YMax, cote4YMax));
+    return std::max(std::max(cote1YMax, cote2YMax), std::max(cote3YMax, cote4YMax));
 }
 
 float Rectangle::getYMin() {
@@ -80,7 +81,7 @@ float Rectangle::getYMin() {
     float cote2YMin = coin2_.getY();
     float cote3YMin = coin3_.getY();
     float cote4YMin = coin4_.getY();
-    return min(min(cote1YMin, cote2YMin), min(cote3YMin, cote4YMin));
+    return std::min(std::min(cote1YMin, cote2YMin), std::min(cote3YMin, cote4YMin));
 }
 
 ostream& operator<<(ostream &os, Rectangle &c)

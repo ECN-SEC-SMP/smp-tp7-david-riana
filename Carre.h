@@ -6,6 +6,9 @@
 #define SMP_TP7_DAVID_RIANA_CARRE_H
 #include "Rectangle.h"
 
+/**
+ * @brief Représente un carré (spécialisation de Rectangle).
+ */
 class Carre : public Rectangle {
 
 };

@@ -28,13 +28,19 @@ float ListeFormes::surfaceTotale() const{
     return total;
 }
 
+/**
+ * @brief Calcule la boîte englobante qui contient toutes les formes.
+ *
+ * Utilise des bornes initialisées avec FLT_MAX / -FLT_MAX pour
+ * pouvoir réduire correctement les min/max sur toutes les formes.
+ */
 Rectangle ListeFormes::boiteEnglobante() const{
     Rectangle boite;
     float xMin = FLT_MAX;
     float yMin = FLT_MAX;
 
-    float xMax = FLT_MIN;
-    float yMax = FLT_MIN;
+    float xMax = -FLT_MAX;
+    float yMax = -FLT_MAX;
 
     for (Forme *f : liste) {
         xMin = std::min(xMin, f->getXMin());
