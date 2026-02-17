@@ -14,8 +14,8 @@ void Forme::operator+=(Point &p) {
 ostream& operator<<(std::ostream &os, Forme &f)
 {
     os << "Forme:" << endl;
-    os << "  | Perimetre = " << f.perimetre()
-       << "  | Surface = " << f.surface();
+    os << "  | Perimetre = " << f.perimetre() << endl
+       << "  | Surface = " << f.surface() << endl;
     return os;
 }
 

@@ -21,4 +21,5 @@ class ListeFormes{
         Rectangle boiteEnglobante() const;
 };
 
+ostream &operator<<(std::ostream &s, ListeFormes &f);
 #endif

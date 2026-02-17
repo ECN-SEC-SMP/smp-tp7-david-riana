@@ -7,12 +7,12 @@
 ostream& operator<<(ostream &os, Carre &c)
 {
     os << "Carre:" << endl;
-    os << "  | Perimetre = " << c.perimetre()
-       << "  | Surface = " << c.surface()
-       << "  | Centre = " << c.getCentre()
-       << "  | Cote1 = " << c.getCote1()
-       << "  | Cote2 = " << c.getCote2()
-       << "  | Cote3 = " << c.getCote3()
-       << "  | Cote4 = " << c.getCote4();
+    os << "  | Perimetre = " << c.perimetre() << endl
+       << "  | Surface = " << c.surface()     << endl
+       << "  | Centre = " << c.getCentre()    << endl
+       << "  | Coin1 = " << c.getCoin1()      << endl
+       << "  | Coin2 = " << c.getCoin2()      << endl
+       << "  | Coin3 = " << c.getCoin3()      << endl
+       << "  | Coin4 = " << c.getCoin4()      << endl;
     return os;
 }

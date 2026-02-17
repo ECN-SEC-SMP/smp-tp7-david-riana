@@ -8,17 +8,17 @@
 
 class Rectangle : public Forme{
 private:
-    Point cote1;
-    Point cote2;
-    Point cote3;
-    Point cote4;
+    Point coin1_;
+    Point coin2_;
+    Point coin3_;
+    Point coin4_;
 
 public:
     Rectangle() {
-        cote1 = Point(0, 0);
-        cote2 = Point(0, 1);
-        cote3 = Point(2, 1);
-        cote4 = Point(0, 2);
+        coin1_ = Point(0, 0);
+        coin2_ = Point(0, 1);
+        coin3_ = Point(2, 1);
+        coin4_ = Point(0, 2);
     }
 
     float perimetre() override;
@@ -29,34 +29,41 @@ public:
     float getYMax() override;
     float getYMin() override;
 
-    Point getCote1() const;
-    Point getCote2() const;
-    Point getCote3() const;
-    Point getCote4() const;
+    Point getCoin1() const;
+    Point getCoin2() const;
+    Point getCoin3() const;
+    Point getCoin4() const;
 
-    void setCote1(const Point &cote1);
-    void setCote2(const Point &cote2);
-    void setCote3(const Point &cote3);
-    void setCote4(const Point &cote4);
+    void setCoin1(const Point &cote1);
+    void setCoin2(const Point &cote2);
+    void setCoin3(const Point &cote3);
+    void setCoin4(const Point &cote4);
 
-    void setCote1(const float x, const float y) {
-        cote1.setX(x);
-        cote1.setY(y);
+    void setCoin1(const float x, const float y) {
+        coin1_.setX(x);
+        coin1_.setY(y);
     };
 
-    void setCote2(const float x, const float y) {
-        cote2.setX(x);
-        cote2.setY(y);
+    void setCoin2(const float x, const float y) {
+        coin2_.setX(x);
+        coin2_.setY(y);
     };
 
-    void setCote3(const float x, const float y) {
-        cote3.setX(x);
-        cote3.setY(y);
+    void setCoin3(const float x, const float y) {
+        coin3_.setX(x);
+        coin3_.setY(y);
     };
 
-    void setCote4(const float x, const float y) {
-        cote4.setX(x);
-        cote4.setY(y);
+    void setCoin4(const float x, const float y) {
+        coin4_.setX(x);
+        coin4_.setY(y);
+    };
+
+    void operator+=(const Point &p) {
+        coin1_ += p;
+        coin2_ += p;
+        coin3_ += p;
+        coin4_ += p;
     };
 };
 

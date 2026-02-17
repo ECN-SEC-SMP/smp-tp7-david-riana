@@ -43,10 +43,19 @@ Rectangle ListeFormes::boiteEnglobante() const{
         yMax = std::max(yMax, f->getYMax());
     }
 
-    boite.setCote1(xMin, yMin);
-    boite.setCote2(xMin, yMax);
-    boite.setCote3(xMax, yMax);
-    boite.setCote4(xMax, yMin);
+    boite.setCoin1(xMin, yMin);
+    boite.setCoin2(xMin, yMax);
+    boite.setCoin3(xMax, yMax);
+    boite.setCoin4(xMax, yMin);
 
     return boite;
+}
+
+ostream& operator<<(ostream &os, ListeFormes &f)
+{
+    os << "ListeFormes:" << endl;
+    for (Forme *forme : f.getFormes()) {
+        os << *forme;
+    }
+    return os;
 }
